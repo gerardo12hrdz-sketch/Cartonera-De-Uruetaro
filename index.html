@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartonera de Morelia y Uruétaro | DURAMAS</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Iconos FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Barra Superior -->
+    <div class="top-bar">
+        <span><i class="fa-solid fa-building"></i> Cartonera de Morelia y Uruétaro | Fabricantes desde 1958</span>
+        <span><i class="fa-solid fa-phone"></i> Oficinas: (443) 312 11 71 | (443) 312 80 83</span>
+    </div>
+
+    <!-- Navegación -->
+    <header class="navbar">
+        <div class="logo-nav-container">
+            <img src="logo-duramas.png" alt="Logo DURAMAS" class="logo-nav-img">
+            <div class="logo-text">
+                <span class="brand-title">CARTONERA DE MORELIA Y URUÉTARO</span>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#contacto" class="btn-nav">Cotizar / Llamada</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Banner Principal (Hero con Logo Principal Destacado) -->
+    <section id="inicio" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <!-- LOGO PRINCIPAL DESTACADO -->
+            <div class="main-logo-wrapper">
+                <img src="logo-duramas.png" alt="Logo DURAMAS Principal" class="logo-hero-principal">
+            </div>
+
+            <h1>Láminas Asfálticas, Plastiteja y Materiales de Construcción</h1>
+            <p>Venta al mayoreo y menudeo para empresas, bodegas y obras. Nos adaptamos a las medidas que necesites hasta 7.20 metros.</p>
+            
+            <div class="hero-btns">
+                <a href="#productos" class="btn-primary"><i class="fa-solid fa-list"></i> Ver Catálogo</a>
+                <a href="https://wa.me/524431826336?text=Hola,%20busco%20cotizar%20materiales%20para%20un%20proyecto" target="_blank" class="btn-whatsapp">
+                    <i class="fab fa-whatsapp"></i> Cotizar por WhatsApp
+                </a>
+                <button id="btn-solicitar-llamada-hero" class="btn-call">
+                    <i class="fa-solid fa-phone-volume"></i> Solicitar Llamada
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Catálogo de Productos -->
+    <section id="productos" class="productos-section">
+        <h2>Catálogo de Productos DURAMAS</h2>
+        <p class="subtitulo">Selecciona cualquier producto para cotizar directamente a nuestro WhatsApp.</p>
+        
+        <div class="grid-productos">
+
+            <!-- Plastiteja -->
+            <div class="card-producto">
+                <div class="card-tag">Plástico</div>
+                <div class="img-placeholder"><i class="fa-solid fa-house-chimney-window"></i></div>
+                <div class="card-body">
+                    <h3>Lámina de Plástico Plastiteja</h3>
+                    <p class="specs">Ancho: 1.08 m | Largos de 1.50 m a 7.20 m</p>
+                    <p>Lámina plástica tipo teja de 5 canales, ligera, aislante y anticorrosiva. Opción de caballete disponible.</p>
+                    <button class="btn-card btn-cotizar-item" data-producto="Plastiteja (Lámina de Plástico)">
+                        <i class="fab fa-whatsapp"></i> Cotizar Plastiteja
+                    </button>
+                </div>
+            </div>
+
+            <!-- Lámina de Cartón Asfáltica -->
+            <div class="card-producto">
+                <div class="card-tag">Asfálticos</div>
+                <div class="img-placeholder"><i class="fa-solid fa-layer-group"></i></div>
+                <div class="card-body">
+                    <h3>Lámina de Cartón Asfáltica</h3>
+                    <p class="specs">Fibra Delgada, Ligera, Popular, Duramas 12 y 14</p>
+                    <p>Láminas impregnadas de chapopote en tonos negro y rojo. Aislamiento térmico para techados y bodegas.</p>
+                    <button class="btn-card btn-cotizar-item" data-producto="Lámina de Cartón Asfáltica">
+                        <i class="fab fa-whatsapp"></i> Cotizar Láminas de Cartón
+                    </button>
+                </div>
+            </div>
+
+            <!-- Rollo Asfáltico -->
+            <div class="card-producto">
+                <div class="card-tag">Impermeabilización</div>
+                <div class="img-placeholder"><i class="fa-solid fa-scroll"></i></div>
+                <div class="card-body">
+                    <h3>Rollo Asfáltico</h3>
+                    <p class="specs">Medidas: 1 m x 27.23 cm | Peso: 10 Kg / Rollo</p>
+                    <p>Protección contra humedad e impermeabilización de alto rendimiento para azoteas y cimentaciones.</p>
+                    <button class="btn-card btn-cotizar-item" data-producto="Rollo Asfáltico">
+                        <i class="fab fa-whatsapp"></i> Cotizar Rollo Asfáltico
+                    </button>
+                </div>
+            </div>
+
+            <!-- Cuñete -->
+            <div class="card-producto">
+                <div class="card-tag">Envases</div>
+                <div class="img-placeholder"><i class="fa-solid fa-bucket"></i></div>
+                <div class="card-body">
+                    <h3>Cuñete (Tambor Reforzado)</h3>
+                    <p class="specs">Capacidad de carga / Peso: 50 Kg</p>
+                    <p>Contenedor industrial reforzado para transporte y almacenamiento de líquidos, selladores y pintura.</p>
+                    <button class="btn-card btn-cotizar-item" data-producto="Cuñetes (50 Kg)">
+                        <i class="fab fa-whatsapp"></i> Cotizar Cuñetes
+                    </button>
+                </div>
+            </div>
+
+            <!-- Poliducto y Manguera Agrícola -->
+            <div class="card-producto">
+                <div class="card-tag">Conducción</div>
+                <div class="img-placeholder"><i class="fa-solid fa-circle-notch"></i></div>
+                <div class="card-body">
+                    <h3>Poliducto Eléctrico y Manguera Agrícola</h3>
+                    <p class="specs">Medidas: 1/2", 3/4", 1", 1 1/2", 2" | Negro y Naranja</p>
+                    <p>Mangueras de polietileno durables para sistemas de riego agrícola e instalación eléctrica en obra.</p>
+                    <button class="btn-card btn-cotizar-item" data-producto="Poliducto / Manguera Agrícola">
+                        <i class="fab fa-whatsapp"></i> Cotizar Mangueras
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mangueras para Gas y Agua -->
+            <div class="card-producto">
+                <div class="card-tag">Conexiones</div>
+                <div class="img-placeholder"><i class="fa-solid fa-faucet-drip"></i></div>
+                <div class="card-body">
+                    <h3>Mangueras para Gas y Agua</h3>
+                    <p class="specs">Tramadas de Aluminio, Pig-Tail, WC, Lavabo y Fregadero</p>
+                    <p>Conexiones reforzadas con rosca de plástico o metal para estufas, boilers, lavabos y alta presión.</p>
+                    <button class="btn-card btn-cotizar-item" data-producto="Mangueras para Gas y Agua">
+                        <i class="fab fa-whatsapp"></i> Cotizar Conexiones
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Información Empresarial -->
+    <section id="nosotros" class="info-empresa">
+        <h2>Atención Comercial y Planta</h2>
+        <div class="info-grid">
+            <div class="info-box">
+                <i class="fa-solid fa-location-dot"></i>
+                <h3>Ubicación</h3>
+                <p>Valle de Apatzingán 154, Uruétaro, Mpio. de Tarímbaro, C.P. 58891.</p>
+                <p><strong>Atención en Morelia, Michoacán y envíos a la región.</strong></p>
+            </div>
+            <div class="info-box">
+                <i class="fa-solid fa-headset"></i>
+                <h3>Teléfonos de Oficina</h3>
+                <p>(443) 312 11 71</p>
+                <p>(443) 312 80 83</p>
+            </div>
+            <div class="info-box">
+                <i class="fab fa-whatsapp"></i>
+                <h3>Atención por WhatsApp</h3>
+                <p><strong>443 182 6336</strong></p>
+                <p>443 198 0853</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formulario de Cotización y Solicitud de Llamada -->
+    <section id="contacto" class="contacto-section">
+        <h2>Solicitar Cotización o Llamada Directa</h2>
+        <p>Llena tus datos para recibir presupuesto por WhatsApp o solicitar que un asesor te marque.</p>
+        
+        <form id="form-cotizacion" class="form-contacto">
+            <div class="input-group">
+                <input type="text" id="nombre" placeholder="Tu nombre o Nombre de Empresa" required>
+            </div>
+            <div class="input-group">
+                <input type="tel" id="telefono" placeholder="Número de Teléfono / WhatsApp" required>
+            </div>
+            <div class="input-group">
+                <select id="producto-select" required>
+                    <option value="" disabled selected>Selecciona el producto principal</option>
+                    <option value="Plastiteja (Lámina de Plástico)">Plastiteja (Lámina de Plástico)</option>
+                    <option value="Lámina de Cartón Asfáltica">Lámina de Cartón Asfáltica</option>
+                    <option value="Rollo Asfáltico">Rollo Asfáltico</option>
+                    <option value="Cuñetes (50 Kg)">Cuñetes (50 Kg)</option>
+                    <option value="Poliducto / Manguera Agrícola">Poliducto / Manguera Agrícola</option>
+                    <option value="Mangueras para Gas / Agua">Mangueras para Gas / Agua</option>
+                    <option value="Pedido Mixto / Mayoreo">Pedido Mixto / Mayoreo</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <textarea id="mensaje" rows="4" placeholder="Especifica medidas, cantidad o destino del pedido..."></textarea>
+            </div>
+
+            <div class="form-buttons">
+                <button type="submit" id="btn-enviar-cotizacion" class="btn-primary btn-bloque">
+                    <i class="fab fa-whatsapp"></i> Enviar Cotización a WhatsApp
+                </button>
+                <button type="button" id="btn-solicitar-llamada-form" class="btn-call btn-bloque">
+                    <i class="fa-solid fa-phone-volume"></i> Solicitar que me llamen
+                </button>
+            </div>
+        </form>
+    </section>
+
+    <!-- Pie de Página -->
+    <footer>
+        <p><strong>CARTONERA DE MORELIA Y URUÉTARO - DURAMAS</strong></p>
+        <p>Distribución de láminas asfálticas y cartón impregnado para techos | Desde 1958</p>
+        <p>&copy; 2026 Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
