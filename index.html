@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Cartonera de Morelia y Uruétaro | DURAMAS</title>
     <link rel="stylesheet" href="styles.css">
     <!-- Iconos FontAwesome -->
@@ -12,8 +12,8 @@
 
     <!-- Barra Superior -->
     <div class="top-bar">
-        <span><i class="fa-solid fa-building"></i> Cartonera de Morelia y Uruétaro | Fabricantes desde 1958</span>
-        <span><i class="fa-solid fa-phone"></i> Oficinas: (443) 312 11 71 | (443) 312 80 83</span>
+        <span><i class="fa-solid fa-building"></i> Cartonera de Morelia y Uruétaro | Desde 1958</span>
+        <span><i class="fa-solid fa-truck-fast"></i> Envíos a Morelia, Uruétaro y región</span>
     </div>
 
     <!-- Navegación -->
@@ -28,17 +28,16 @@
             <ul>
                 <li><a href="#inicio">Inicio</a></li>
                 <li><a href="#productos">Productos</a></li>
-                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#cobertura">Cobertura</a></li>
                 <li><a href="#contacto" class="btn-nav">Cotizar / Llamada</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Banner Principal (Hero con Logo Principal Destacado) -->
+    <!-- Banner Principal -->
     <section id="inicio" class="hero">
         <div class="hero-overlay"></div>
         <div class="hero-content">
-            <!-- LOGO PRINCIPAL DESTACADO -->
             <div class="main-logo-wrapper">
                 <img src="logo-duramas.png" alt="Logo DURAMAS Principal" class="logo-hero-principal">
             </div>
@@ -46,9 +45,13 @@
             <h1>Láminas Asfálticas, Plastiteja y Materiales de Construcción</h1>
             <p>Venta al mayoreo y menudeo para empresas, bodegas y obras. Nos adaptamos a las medidas que necesites hasta 7.20 metros.</p>
             
+            <div class="aviso-cobertura-tag">
+                <i class="fa-solid fa-location-dot"></i> Entrega y fletes limitados a Michoacán y regiones aledañas
+            </div>
+
             <div class="hero-btns">
                 <a href="#productos" class="btn-primary"><i class="fa-solid fa-list"></i> Ver Catálogo</a>
-                <a href="https://wa.me/524431826336?text=Hola,%20busco%20cotizar%20materiales%20para%20un%20proyecto" target="_blank" class="btn-whatsapp">
+                <a href="https://wa.me/524432722109?text=Hola,%20busco%20cotizar%20materiales%20para%20un%20proyecto" target="_blank" class="btn-whatsapp">
                     <i class="fab fa-whatsapp"></i> Cotizar por WhatsApp
                 </a>
                 <button id="btn-solicitar-llamada-hero" class="btn-call">
@@ -152,32 +155,33 @@
         </div>
     </section>
 
-    <!-- Información Empresarial -->
-    <section id="nosotros" class="info-empresa">
-        <h2>Atención Comercial y Planta</h2>
+    <!-- Información Empresarial y Cobertura -->
+    <section id="cobertura" class="info-empresa">
+        <h2>Atención Comercial, Ubicación y Cobertura</h2>
         <div class="info-grid">
             <div class="info-box">
                 <i class="fa-solid fa-location-dot"></i>
-                <h3>Ubicación</h3>
+                <h3>Planta y Ubicación</h3>
                 <p>Valle de Apatzingán 154, Uruétaro, Mpio. de Tarímbaro, C.P. 58891.</p>
-                <p><strong>Atención en Morelia, Michoacán y envíos a la región.</strong></p>
+                <p><strong>Atención directa en Morelia, Uruétaro y alrededores.</strong></p>
             </div>
-            <div class="info-box">
-                <i class="fa-solid fa-headset"></i>
-                <h3>Teléfonos de Oficina</h3>
-                <p>(443) 312 11 71</p>
-                <p>(443) 312 80 83</p>
+            <div class="info-box info-highlight">
+                <i class="fa-solid fa-truck-ramp-box"></i>
+                <h3>Cobertura de Entrega</h3>
+                <p><strong>Servicio limitado a ciertas zonas:</strong></p>
+                <p>Realizamos envíos y entregas directas en el Estado de Michoacán y municipios/zonas regionales aledañas. Consulta disponibilidad para tu localidad al cotizar.</p>
             </div>
             <div class="info-box">
                 <i class="fab fa-whatsapp"></i>
                 <h3>Atención por WhatsApp</h3>
-                <p><strong>443 182 6336</strong></p>
+                <p><strong>443 272 2109</strong></p>
                 <p>443 198 0853</p>
+                <p class="small-text">Oficina: (443) 312 11 71 / 80 83</p>
             </div>
         </div>
     </section>
 
-    <!-- Formulario de Cotización y Solicitud de Llamada -->
+    <!-- Formulario de Cotización -->
     <section id="contacto" class="contacto-section">
         <h2>Solicitar Cotización o Llamada Directa</h2>
         <p>Llena tus datos para recibir presupuesto por WhatsApp o solicitar que un asesor te marque.</p>
@@ -188,6 +192,9 @@
             </div>
             <div class="input-group">
                 <input type="tel" id="telefono" placeholder="Número de Teléfono / WhatsApp" required>
+            </div>
+            <div class="input-group">
+                <input type="text" id="poblacion" placeholder="Población, Municipio o Ciudad de destino" required>
             </div>
             <div class="input-group">
                 <select id="producto-select" required>
@@ -202,7 +209,7 @@
                 </select>
             </div>
             <div class="input-group">
-                <textarea id="mensaje" rows="4" placeholder="Especifica medidas, cantidad o destino del pedido..."></textarea>
+                <textarea id="mensaje" rows="4" placeholder="Especifica medidas, cantidad o detalles del pedido..."></textarea>
             </div>
 
             <div class="form-buttons">
